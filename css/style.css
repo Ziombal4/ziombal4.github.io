@@ -11,6 +11,11 @@ html {
 	-webkit-font-smoothing: antialiased;
 }
 
+body{
+background-image: url("img/wallpaper.png");
+background-size: cover;
+}
+
 html, body, div, h1, h2, p, a, img {
 	margin: 0px;
 	padding: 0px;
@@ -73,8 +78,8 @@ html, body, div, h1, h2, p, a, img {
 	overflow: hidden;
 	margin-bottom: 16px;
 	border: none;
-	background-color: #222222;
-	color: rgb(255, 255, 255);
+	background-color: #fff;
+	color: #000000;
 	transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3) 0s;
 }
 
@@ -165,7 +170,7 @@ html, body, div, h1, h2, p, a, img {
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: #000000;
+	background-color: #249bd6;
 }
 
 .LyLIy {
