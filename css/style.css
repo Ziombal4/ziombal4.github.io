@@ -162,7 +162,7 @@ html, body, div, h1, h2, p, a, img {
 	position: fixed;
 	inset: 0px;
 	z-index: -1;
-	background:  url(../img/wallpaper.png) no-repeat center center fixed  rgba(0, 0, 0, 0.2);
+	background:  url(../img/wallpaper.png) cover no-repeat fixed  rgba(0, 0, 0, 0.2);
 	  background-blend-mode: multiply;
 
 }
