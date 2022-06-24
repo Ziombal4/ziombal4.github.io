@@ -162,11 +162,8 @@ html, body, div, h1, h2, p, a, img {
 	position: fixed;
 	inset: 0px;
 	z-index: -1;
-	background:  url(../img/wallpaper.png) rgba(0, 0, 0, 0.2);
-	  background-blend-mode: multiply;
-	background-size: cover;
-	background-repeat: no-repeat;
-
+	background:  url(../img/wallpaper.png) no-repeat 50% 50% rgba(0, 0, 0, 0.2);
+	background-blend-mode: multiply;
 }
 
 .LyLIy {
