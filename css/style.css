@@ -11,11 +11,6 @@ html {
 	-webkit-font-smoothing: antialiased;
 }
 
-body{
-background-image: url("img/wallpaper.png");
-background-size: cover;
-}
-
 html, body, div, h1, h2, p, a, img {
 	margin: 0px;
 	padding: 0px;
@@ -167,10 +162,9 @@ html, body, div, h1, h2, p, a, img {
 	position: fixed;
 	inset: 0px;
 	z-index: -1;
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-color: #249bd6;
+	background:  url(../img/wallpaper.png) no-repeat center center fixed  rgba(0, 0, 0, 0.2);
+	  background-blend-mode: multiply;
+
 }
 
 .LyLIy {
