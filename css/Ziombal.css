@@ -56,7 +56,7 @@
 }
         /* Longer Activities */
 .text > .activity-markdown > .markdown {
-  max-height: none;
+  max-height: 700px;
 }
 
             /* Background */
