@@ -469,7 +469,7 @@ body {
 
             /* Favourites */
   .overview .favourites > .favourites-wrap {
-    overflow: visible;
+    overflow: scroll;
   }
   .favourites-wrap[data-v-1496db1c]{
       overflow: visible;
