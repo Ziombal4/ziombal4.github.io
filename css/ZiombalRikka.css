@@ -3,10 +3,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 :root{
-    --spotfy-bacground-color: rgb(5, 115, 172);
-    --spotfy-logo-color: rgb(61, 180, 242);
-    --spotfy-border: 2px solid rgb(61, 180, 242);
-    --spotfy-font-title: 1.4rem;
+   --Ziombal-bg: url("https://i.imgur.com/aZeUnGy.png");
 }
 
             /* Colors */
@@ -61,11 +58,7 @@
 
             /* Background */
 body {
-    background: url("https://i.imgur.com/qizfMil.jpg") center/100% fixed;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    position: relative;
-    background-attachment: fixed;
+   background: rgb(var(--color-background)) var(--Ziombal-bg) center/100% fixed;
 }
 
             /* Footer */
