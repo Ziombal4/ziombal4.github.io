@@ -865,11 +865,11 @@ text-shadow: 1.5px 1.5px 3px black;
 }
 
         /* Home Logo */
-.logo img[data-v-4fbac4e1] {
-    content: url(https://i.imgur.com/rnW6y6X.png);
+.logo img[data-v-62eacfff] {
+    content: url("https://i.imgur.com/rnW6y6X.png");
     position: relative;
 } 
-.logo img[data-v-4fbac4e1] {
+.logo img[data-v-62eacfff] {
     height: 40px;
     width: 40px;
 }
