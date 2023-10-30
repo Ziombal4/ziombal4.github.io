@@ -195,7 +195,7 @@ body {
 
             /* Top Nav */
 #nav {
-    background: rgba(0,0,0,0.8)) none repeat scroll 0% 0% !important;
+    background: rgba(0, 0, 0, 0.8) !important;
     border-radius: 0 0 16px 16px;
     transition: background 0.8s ease 0s, top 0.5s ease 0s !important;
     height: 65px;
@@ -917,4 +917,19 @@ text-shadow: 1.5px 1.5px 3px black;
     top: -5px;
     left: 20px;
     -webkit-filter: blur(0.5px);
+}
+/* quick fixes */
+
+.tooltip[data-v-366e5d34] {
+	background: rgba(var(--color-foreground));
+} 
+.site-theme-dark .overview .favourite.studio {
+    background-color: unset !important;
+} 
+
+.footer[data-v-0f519cab] {
+    background: rgb(0, 0, 0, 0.8) !important;
+}
+.donator-badge[data-v-04d66030] {
+	background: unset !important; 
 }
