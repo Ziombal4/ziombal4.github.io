@@ -415,8 +415,6 @@ body {
   background-color: rgb(var(--color-foreground)) !important;
 }
 .footer[data-v-815ccddc] {
-  display: none;
-  visibility: hidden;
 }
 .content.container>div>div:nth-child(2)>div.stats-wrap>div:nth-child(1) {
     background-color: rgb(var(--color-foreground));
