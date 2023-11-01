@@ -408,8 +408,11 @@ body {
     font-size: 1.1rem;
 }
 .milestones[data-v-815ccddc] {
-  display: none;
-  visibility: hidden;
+  background-color: rgb(var(--color-foreground));
+}
+
+.progress[data-v-815ccddc] { 
+  background-color: rgb(var(--color-foreground));
 }
 .footer[data-v-815ccddc] {
   display: none;
