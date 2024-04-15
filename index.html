@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ziombal's Site</title>
+  <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+  <meta name="description" content="Ziombal's personal site.">
+  <meta name="author" content="Sekuji">
+  <meta name="publisher" content="Sekuji, Ziombal">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ziombal's Site">
+  <meta property="og:description" content="Ziombal's personal site.">
+  <meta property="og:url" content="ziombal.xyz">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link href="css/jquery-sakura.css" rel="stylesheet" type="text/css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-y: auto;
+      background-image: url('img/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      backdrop-filter: blur(5px);
+      font-family: "Quicksand", sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-section {
+      flex: 1;
+    }
+    .footer {
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+    }
+    .heart {
+      color: #0072ff;
+    }
+    .gradient-text {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto 1.5rem;
+      background-image: url('img/pfp.png');
+      background-size: cover;
+      background-position: center;
+      border: 3px solid #eafaff;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    }
+    .nickname-container {
+      position: relative;
+      width: 50%;
+      max-width: 100px;
+      margin: 0 auto 1.5rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      border: 1px solid #eafaff;
+      border-radius: 25px;
+    }
+    .custom-button {
+      background-color: rgba(255, 255, 255, 0.55) !important;
+      backdrop-filter: blur(5px);
+      border: none;
+      width: 100%;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+    .custom-button:hover {
+      transform: scale(1.05);
+    }
+    .about-me {
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
+    }
+
+    .modal-content {
+      max-width: 350px;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(5px);
+      border: 1px solid #eafaff;
+      border-radius: 25px;
+    }
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+    
+  <section class="section main-section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <div class="profile-picture"></div>
+          <div class="nickname-container p-1">
+            <p class="nickname has-text-weight-semibold has-text-white is-size-6 m-0 has-text-centered">@Ziombal</p>
+          </div>
+          <div class="content has-text-centered">
+            <p class="has-text-white is-size-6 has-text-weight-semibold has-text-centered has-text-shadow about-me">
+                A 19-year-old Polish individual who enjoys animanga, video games, football, and the music of Ado and Alan Walker.</p>
+            <p>
+              <a class="button is-large is-light is-rounded custom-button" href="https://anilist.co/user/Ziombal/">                
+              <span class="icon icon-overlay">
+                <img src="img/anilist.svg" alt="Icon" style="max-width: 2.25rem; margin-right: 0.5rem;">
+              </span>
+              <span>Anilist</span></a>
+            </p>
+            <p>
+              <a class="button is-large is-light is-rounded custom-button" href="https://steamcommunity.com/id/ziombal4/">                
+              <span class="icon icon-overlay">
+                <img src="img/steam.svg" alt="Icon" style="max-width: 2rem; margin-right: 0.5rem;">
+              </span>
+              <span>Steam</span></a>
+            </p>
+            <p>
+              <a class="button is-large is-light is-rounded custom-button" href="https://discordid.netlify.app/?id=931659655820746842">                
+              <span class="icon icon-overlay">
+                <img src="img/discord.svg" alt="Icon" style="max-width: 1.9rem; margin-right: 0.5rem;">
+              </span>
+              <span>Discord</span></a>
+            </p>
+            <p>
+              <a class="button is-large is-light is-rounded custom-button" href="https://www.last.fm/user/ziombal4">                
+              <span class="icon icon-overlay">
+                <img src="img/lastfm.svg" alt="Icon" style="max-width: 2rem; margin-right: 0.5rem;">
+              </span>
+              <span>Last.fm</span></a>
+            </p>
+            <p>
+              <button class="button is-large is-light is-rounded custom-button" onclick="showGachaAccounts()">                
+                <span class="icon icon-overlay">
+                  <img src="img/gacha.svg" alt="Icon" style="max-width: 2.25rem; margin-right: 0.5rem;">
+                </span>
+                <span>Gacha Corner</span>
+              </button>
+            </p>
+            <p>
+              <a class="button is-large is-light is-rounded custom-button" href="https://letterboxd.com/Ziombal/">                
+              <span class="icon icon-overlay">
+                <img src="img/letterboxd.svg" alt="Icon" style="max-width: 1.9rem; margin-right: 0.5rem;">
+              </span>
+              <span>Letterboxd </span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="gachaModal" class="modal">
+    <div class="modal-content has-text-white p-4">
+      <span class="modal-close is-size-3" onclick="closeGachaModal()"></span>
+      <p class="title is-5 mb-3">Gacha Corner</p>
+      <p class="is-6">Honkai Star Rail - TBL 20 - 702634008</p>
+      <p class="is-6">Genshin Impact - AR 56 - 703510179</p>
+      <!-- Add more gacha accounts as needed -->
+    </div>
+  </div>
+  <footer class="footer py-1">
+    <div class="content is-size-6 has-text-centered">
+      <p>Made with <span class="heart">❤</span> by <a href="http://sekuji.xyz/" class="gradient-text" target="_blank">sekuji.xyz</a></p>
+    </div>
+  </footer>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/jquery-sakura.min.js"></script>
+  <script>
+    $(window).load(function () {
+        $('body').sakura();
+    });
+
+    function showGachaAccounts() {
+      var modal = document.getElementById('gachaModal');
+      modal.classList.add('is-active');
+    }
+    function closeGachaModal() {
+      var modal = document.getElementById('gachaModal');
+      modal.classList.remove('is-active');
+    }
+  </script>
+</body>
+</html>
