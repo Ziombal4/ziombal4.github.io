@@ -349,12 +349,15 @@ body {
     z-index: 0;
     border-radius: 10px;
 }
+.nav-btn.donator-badge {
+   right: 10px !important;
+}	
 .actions>.nav-btn {
     padding: 8px;
     font-size: 1.69rem;
     color: #fff;
     bottom: -42px;
-    right: 20px;
+    right: 110px;
 }
 .nav-btn[data-v-2431f6d8] {
     border-radius: 4px;
