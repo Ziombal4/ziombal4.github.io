@@ -12,4 +12,4 @@ Quick craft for a friend.
 ## 
 
 - Preview: [ziombal4.github.io](https://ziombal4.github.io)
-- **Creator:** [sekuji](https://github.com/sekuji)
+- **Creator:** [sekuji](https://github.com/sekuji) (I don't think he wants to be associated with it anymore)
